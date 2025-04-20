@@ -1,0 +1,37 @@
+#slideDown {
+    max-height: 0;
+    margin: 0 0;
+    a {
+        padding: 0 10px;
+        margin-top: -10px;
+    }
+    div.w-full {
+        padding-top: 0;
+        margin-top: 0;
+        height: 0;
+        overflow: hidden;
+    }
+    div.links {
+        height: 50px;
+    }
+}
+#slideDown.open {
+    max-height: 236px;
+    margin: 20px 0;
+    a {
+        padding: 4px 10px;
+        margin-top: 0px;
+    }
+    div.w-full {
+        margin-top: 20px;
+        padding-top: 20px;
+        height: 51px;
+    }
+    div.links {
+        height: 145px;
+    }
+}
+.active {
+    background-color: black;
+    color: white;
+}
