@@ -10,7 +10,7 @@
 <body>
     <div class="sticky top-0 bg-white shadow-[0_7px_8px_rgba(0,0,0,0.05)]">
         <div>
-            <div class="max-w-390 max-2xl:max-w-285 max-xl:max-w-225 heeeeeee-15 m-auto flex justify-between items-center py-[16px] px-[15px] border-b-[0.5px] border-b-[#E7E7E7]">
+            <div class="max-w-390 max-2xl:max-w-285 max-xl:w-225 h-15 m-auto flex justify-between items-center py-[16px] px-[15px] border-b-[0.5px] border-b-[#E7E7E7] max-lg:w-[100%] transition-all duration-400 ease-in-out">
                 <img class="w-35" src="img/Papa-Johns-logo.png" alt="P-Logo">
                 <div class="flex items-center gap-[5px] max-xl:hidden">
                     <i class="fa-solid fa-globe"></i>
@@ -34,7 +34,7 @@
                 </div>
             </div>
             <div class="w-full absolute bg-white flex justify-center shadow-[0_7px_8px_rgba(0,0,0,0.05)]">
-                <div id="slideDown" class="w-[900px] h-[236px] m-auto px-5 xl:hidden overflow-hidden transition-all duration-400 ease-in-out" >
+                <div id="slideDown" class="w-[900px] max-lg:w-full h-[236px] m-auto px-2.75 xl:hidden overflow-hidden transition-all duration-400 ease-in-out" >
                     <div class=" w-[900px] flex flex-col links transition-all duration-400 ease-out">
                         <a class="inline-block py-1 px-2.5 w-100 h-[29px] text-black font-[Poppins] text-[18px] font-[900] leading-[24px] rounded-[20px] hover:bg-[#F0F0F0] transition-all duration-400 ease-in-out" href="#">Menyu</a>
                         <a class="inline-block py-1 px-2.5 w-100 h-[29px] text-black font-[Poppins] text-[18px] font-[900] leading-[24px] rounded-[20px] hover:bg-[#F0F0F0] transition-all duration-400 ease-in-out" href="#">Təkliflər</a>
@@ -57,7 +57,7 @@
                 </div>
             </div>
         </div>
-        <div class="max-w-[1560px] h-[59px] py-2 flex justify-between items-center m-auto max-2xl:max-w-[1140px] max-xl:hidden">
+        <div class="max-w-[1560px] h-[59px] px-1.25 py-2 flex justify-between items-center m-auto max-2xl:max-w-[1140px] max-xl:hidden transition-all duration-400 ease-in-out">
             <div class="">
                 <a class="inline-block py-1 px-2.5 h-[29px] text-black font-[Poppins] text-[18px] font-[900] leading-[24px] rounded-[20px] hover:bg-[#F0F0F0]" href="#">Menyu</a>
                 <a class="inline-block py-1 px-2.5 h-[29px] text-black font-[Poppins] text-[18px] font-[900] leading-[24px] rounded-[20px] hover:bg-[#F0F0F0]" href="#">Təkliflər</a>
@@ -65,34 +65,38 @@
                 <a class="inline-block py-1 px-2.5 h-[29px] text-black font-[Poppins] text-[18px] font-[900] leading-[24px] rounded-[20px] hover:bg-[#F0F0F0]" href="#">Papa Talk</a>
                 <a class="inline-block py-1 px-2.5 h-[29px] text-black font-[Poppins] text-[18px] font-[900] leading-[24px] rounded-[20px] hover:bg-[#F0F0F0]" href="#">Haqqımızda</a>
             </div>
-            <div class=" w-[130px] h-[43px] uppercase flex items-center justify-center bg-[#CFEB0B] font-[Poppins] text-[14px] rounded-[40px] border-[1px] cursor-pointer border-black hover:bg-white tracking-[0.2em]">
+            <div class=" w-[130px] mr-3.75 h-[43px] uppercase flex items-center justify-center bg-[#CFEB0B] font-[Poppins] text-[14px] rounded-[40px] border-[1px] cursor-pointer border-black hover:bg-white tracking-[0.2em]">
                 Daxil ol
             </div>
         </div>
-        <div class="max-w-[1560px] max-2xl:max-w-[1140px] categoryLinks max-xl:max-w-[900px] pt-2.5 m-auto flex md:flex-wrap max-md:overflow-x-auto max-md:whitespace-nowrap">
+        <div id="categoryLinks" class="max-w-[1560px] max-2xl:w-[1140px] max-xl:w-[900px] max-lg:w-full px-1.25 pt-2.5 m-auto flex md:flex-wrap max-md:overflow-x-auto max-md:whitespace-nowrap">
             <button value="0" class="h-7.5 mb-2 mr-3 max-md:mr-0 px-2.5 py-1 hover:bg-[#F0F0F0] rounded-[20px] flex justify-center items-center transition-all duration-75 ease-in-out"><span class="pointer-events-none text-[18px] font-[Poppins] font-[500] uppercase"><i class="fa-solid fa-star"></i> Mükafatlar</span></button>
-            <button value="1" class="h-7.5 mb-2 mr-3 max-md:mr-0 px-2.5 py-1 hover:bg-[#F0F0F0] rounded-[20px] flex justify-center items-center transition-all duration-75 ease-in-out active"><span class ="pointer-events-none text-[18px] font-[Poppins] font-[500] uppercase">Kampaniyalar</span></button>
-            <button value="2" class="h-7.5 mb-2 mr-3 max-md:mr-0 px-2.5 py-1 hover:bg-[#F0F0F0] rounded-[20px] flex justify-center items-center transition-all duration-75 ease-in-out"><span class="pointer-events-none text-[18px] font-[Poppins] font-[500] uppercase">Pizza</span></button>
-            <button value="3" class="h-7.5 mb-2 mr-3 max-md:mr-0 px-2.5 py-1 hover:bg-[#F0F0F0] rounded-[20px] flex justify-center items-center transition-all duration-75 ease-in-out"><span class="pointer-events-none text-[18px] font-[Poppins] font-[500] uppercase">Qəlyanaltı</span></button>
+            <button value="1" class="h-7.5 mb-2 mr-3 max-md:mr-0 px-2.5 py-1 hover:bg-[#F0F0F0] rounded-[20px] flex justify-center items-center transition-all duration-75 ease-in-out active"><span class="pointer-events-none text-[18px] font-[Poppins] font-[500] uppercase">Kampaniyalar</span></button>
+            <button value="pizza" class="h-7.5 mb-2 mr-3 max-md:mr-0 px-2.5 py-1 hover:bg-[#F0F0F0] rounded-[20px] flex justify-center items-center transition-all duration-75 ease-in-out"><span class="pointer-events-none text-[18px] font-[Poppins] font-[500] uppercase">Pizza</span></button>
+            <button value="qəlyanaltı" class="h-7.5 mb-2 mr-3 max-md:mr-0 px-2.5 py-1 hover:bg-[#F0F0F0] rounded-[20px] flex justify-center items-center transition-all duration-75 ease-in-out"><span class="pointer-events-none text-[18px] font-[Poppins] font-[500] uppercase">Qəlyanaltı</span></button>
             <button value="4" class="h-7.5 mb-2 mr-3 max-md:mr-0 px-2.5 py-1 hover:bg-[#F0F0F0] rounded-[20px] flex justify-center items-center transition-all duration-75 ease-in-out"><span class="pointer-events-none text-[18px] font-[Poppins] font-[500] uppercase">Pizza party</span></button>
-            <button value="5" class="h-7.5 mb-2 mr-3 max-md:mr-0 px-2.5 py-1 hover:bg-[#F0F0F0] rounded-[20px] flex justify-center items-center transition-all duration-75 ease-in-out"><span class="pointer-events-none text-[18px] font-[Poppins] font-[500] uppercase">Pasta</span></button>
-            <button value="6" class="h-7.5 mb-2 mr-3 max-md:mr-0 px-2.5 py-1 hover:bg-[#F0F0F0] rounded-[20px] flex justify-center items-center transition-all duration-75 ease-in-out"><span class="pointer-events-none text-[18px] font-[Poppins] font-[500] uppercase">salatlar</span></button>
-            <button value="7" class="h-7.5 mb-2 mr-3 max-md:mr-0 px-2.5 py-1 hover:bg-[#F0F0F0] rounded-[20px] flex justify-center items-center transition-all duration-75 ease-in-out"><span class="pointer-events-none text-[18px] font-[Poppins] font-[500] uppercase">içkiler</span></button>
-            <button value="8" class="h-7.5 mb-2 mr-3 max-md:mr-0 px-2.5 py-1 hover:bg-[#F0F0F0] rounded-[20px] flex justify-center items-center transition-all duration-75 ease-in-out"><span class="pointer-events-none text-[18px] font-[Poppins] font-[500] uppercase">desertlər</span></button>
-            <button value="9" class="h-7.5 mb-2 mr-3 max-md:mr-0 px-2.5 py-1 hover:bg-[#F0F0F0] rounded-[20px] flex justify-center items-center transition-all duration-75 ease-in-out"><span class="pointer-events-none text-[18px] font-[Poppins] font-[500] uppercase">souslar</span></button>
-            <button value="10" class="h-7.5 mb-2 mr-3 max-md:mr-0 px-2.5 py-1 hover:bg-[#F0F0F0] rounded-[20px] flex justify-center items-center transition-all duration-75 ease-in-out"><span class="pointer-events-none text-[18px] font-[Poppins] font-[500] uppercase">papadias</span></button>
+            <button value="pasta" class="h-7.5 mb-2 mr-3 max-md:mr-0 px-2.5 py-1 hover:bg-[#F0F0F0] rounded-[20px] flex justify-center items-center transition-all duration-75 ease-in-out"><span class="pointer-events-none text-[18px] font-[Poppins] font-[500] uppercase">Pasta</span></button>
+            <button value="salatlar" class="h-7.5 mb-2 mr-3 max-md:mr-0 px-2.5 py-1 hover:bg-[#F0F0F0] rounded-[20px] flex justify-center items-center transition-all duration-75 ease-in-out"><span class="pointer-events-none text-[18px] font-[Poppins] font-[500] uppercase">salatlar</span></button>
+            <button value="içkiler" class="h-7.5 mb-2 mr-3 max-md:mr-0 px-2.5 py-1 hover:bg-[#F0F0F0] rounded-[20px] flex justify-center items-center transition-all duration-75 ease-in-out"><span class="pointer-events-none text-[18px] font-[Poppins] font-[500] uppercase">içkiler</span></button>
+            <button value="desertlar" class="h-7.5 mb-2 mr-3 max-md:mr-0 px-2.5 py-1 hover:bg-[#F0F0F0] rounded-[20px] flex justify-center items-center transition-all duration-75 ease-in-out"><span class="pointer-events-none text-[18px] font-[Poppins] font-[500] uppercase">desertlər</span></button>
+            <button value="souslar" class="h-7.5 mb-2 mr-3 max-md:mr-0 px-2.5 py-1 hover:bg-[#F0F0F0] rounded-[20px] flex justify-center items-center transition-all duration-75 ease-in-out"><span class="pointer-events-none text-[18px] font-[Poppins] font-[500] uppercase">souslar</span></button>
+            <button value="papadias" class="h-7.5 mb-2 mr-3 max-md:mr-0 px-2.5 py-1 hover:bg-[#F0F0F0] rounded-[20px] flex justify-center items-center transition-all duration-75 ease-in-out"><span class="pointer-events-none text-[18px] font-[Poppins] font-[500] uppercase">papadias</span></button>
+        </div>
+    </div>
+    <div class="px-[15px] m-auto flex w-[1590px] max-2xl:w-[1170px] max-xl:w-[930px] max-lg:w-[100%]">
+        <div class="pl-3.75 pr-2 w-[1113px] max-2xl:w-[780px] max-xl:w-[930px] max-lg:w-[100%]">
+            <div id="display"></div>
         </div>
     </div>
 
-
-
-
-        <script>
-            const btn = document.getElementById('btn')
-            const menu = document.getElementById('slideDown')
-            btn.addEventListener("click", () => {
-                menu.classList.toggle("open");
-            });
-        </script>
+    <script type="module" src="script-files/data.js"></script>
+    <script src="script-files/const.js"></script>
+    <script type="module" src="script-files/function.js"></script>
+    <script>
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("open");
+        });
+    </script>
+    <script></script>
 </body>
 </html>

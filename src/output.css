@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-500: oklch(63.7% 0.237 25.331);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -198,11 +199,20 @@
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
   }
+  .mt-6 {
+    margin-top: calc(var(--spacing) * 6);
+  }
   .mr-3 {
     margin-right: calc(var(--spacing) * 3);
   }
+  .mr-3\.75 {
+    margin-right: calc(var(--spacing) * 3.75);
+  }
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
+  }
+  .mb-4 {
+    margin-bottom: calc(var(--spacing) * 4);
   }
   .flex {
     display: flex;
@@ -225,6 +235,9 @@
   .h-7\.5 {
     height: calc(var(--spacing) * 7.5);
   }
+  .h-15 {
+    height: calc(var(--spacing) * 15);
+  }
   .h-\[29px\] {
     height: 29px;
   }
@@ -242,6 +255,12 @@
   }
   .h-\[236px\] {
     height: 236px;
+  }
+  .h-\[449px\] {
+    height: 449px;
+  }
+  .h-full {
+    height: 100%;
   }
   .w-4 {
     width: calc(var(--spacing) * 4);
@@ -261,11 +280,20 @@
   .w-\[30px\] {
     width: 30px;
   }
+  .w-\[33\.3333\%\] {
+    width: 33.3333%;
+  }
   .w-\[130px\] {
     width: 130px;
   }
   .w-\[900px\] {
     width: 900px;
+  }
+  .w-\[1113px\] {
+    width: 1113px;
+  }
+  .w-\[1590px\] {
+    width: 1590px;
   }
   .w-full {
     width: 100%;
@@ -321,6 +349,12 @@
   .overflow-hidden {
     overflow: hidden;
   }
+  .rounded {
+    border-radius: 0.25rem;
+  }
+  .rounded-\[16px\] {
+    border-radius: 16px;
+  }
   .rounded-\[20px\] {
     border-radius: 20px;
   }
@@ -371,14 +405,26 @@
   .p-0 {
     padding: calc(var(--spacing) * 0);
   }
+  .px-1 {
+    padding-inline: calc(var(--spacing) * 1);
+  }
+  .px-1\.25 {
+    padding-inline: calc(var(--spacing) * 1.25);
+  }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
   }
   .px-2\.5 {
     padding-inline: calc(var(--spacing) * 2.5);
   }
-  .px-5 {
-    padding-inline: calc(var(--spacing) * 5);
+  .px-2\.75 {
+    padding-inline: calc(var(--spacing) * 2.75);
+  }
+  .px-3 {
+    padding-inline: calc(var(--spacing) * 3);
+  }
+  .px-3\.75 {
+    padding-inline: calc(var(--spacing) * 3.75);
   }
   .px-\[15px\] {
     padding-inline: 15px;
@@ -389,6 +435,9 @@
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
+  }
   .py-\[16px\] {
     padding-block: 16px;
   }
@@ -398,8 +447,35 @@
   .pt-2\.5 {
     padding-top: calc(var(--spacing) * 2.5);
   }
+  .pt-4 {
+    padding-top: calc(var(--spacing) * 4);
+  }
   .pt-5 {
     padding-top: calc(var(--spacing) * 5);
+  }
+  .pt-\[34px\] {
+    padding-top: 34px;
+  }
+  .pr-2 {
+    padding-right: calc(var(--spacing) * 2);
+  }
+  .pb-2 {
+    padding-bottom: calc(var(--spacing) * 2);
+  }
+  .pl-3 {
+    padding-left: calc(var(--spacing) * 3);
+  }
+  .pl-3\.5 {
+    padding-left: calc(var(--spacing) * 3.5);
+  }
+  .pl-3\.75 {
+    padding-left: calc(var(--spacing) * 3.75);
+  }
+  .pl-7 {
+    padding-left: calc(var(--spacing) * 7);
+  }
+  .pl-7\.5 {
+    padding-left: calc(var(--spacing) * 7.5);
   }
   .font-\[\'Poppins\'\] {
     font-family: 'Poppins';
@@ -416,16 +492,22 @@
   .text-\[14px\] {
     font-size: 14px;
   }
+  .text-\[16px\] {
+    font-size: 16px;
+  }
   .text-\[18px\] {
     font-size: 18px;
   }
-  .leading-\[21px\] {
-    --tw-leading: 21px;
-    line-height: 21px;
+  .text-\[42px\] {
+    font-size: 42px;
   }
   .leading-\[24px\] {
     --tw-leading: 24px;
     line-height: 24px;
+  }
+  .font-\[400\] {
+    --tw-font-weight: 400;
+    font-weight: 400;
   }
   .font-\[500\] {
     --tw-font-weight: 500;
@@ -508,6 +590,21 @@
       outline-style: none;
     }
   }
+  .max-2xl\:w-\[780px\] {
+    @media (width < 100rem) {
+      width: 780px;
+    }
+  }
+  .max-2xl\:w-\[1140px\] {
+    @media (width < 100rem) {
+      width: 1140px;
+    }
+  }
+  .max-2xl\:w-\[1170px\] {
+    @media (width < 100rem) {
+      width: 1170px;
+    }
+  }
   .max-2xl\:max-w-285 {
     @media (width < 100rem) {
       max-width: calc(var(--spacing) * 285);
@@ -523,14 +620,34 @@
       display: none;
     }
   }
-  .max-xl\:max-w-225 {
+  .max-xl\:w-225 {
     @media (width < 75rem) {
-      max-width: calc(var(--spacing) * 225);
+      width: calc(var(--spacing) * 225);
     }
   }
-  .max-xl\:max-w-\[900px\] {
+  .max-xl\:w-\[900px\] {
     @media (width < 75rem) {
-      max-width: 900px;
+      width: 900px;
+    }
+  }
+  .max-xl\:w-\[930px\] {
+    @media (width < 75rem) {
+      width: 930px;
+    }
+  }
+  .max-lg\:w-\[100\%\] {
+    @media (width < 61.875rem) {
+      width: 100%;
+    }
+  }
+  .max-lg\:w-full {
+    @media (width < 61.875rem) {
+      width: 100%;
+    }
+  }
+  .max-lg\:text-\[36px\] {
+    @media (width < 61.875rem) {
+      font-size: 36px;
     }
   }
   .max-md\:mr-0 {
@@ -559,6 +676,7 @@
     }
   }
 }
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 select:focus {
   box-shadow: none;
 }
